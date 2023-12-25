@@ -1,0 +1,178 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.light {
+	--mainColor:blue;
+	--hoverColor: yellow;
+	--darkOne: black;
+	--darkTwo:rgb(60, 57, 57);
+	--lightOne:grey;
+	--lightTwo: rgb(167, 164, 164);
+	--backgroundColor: lightblue;
+
+}
+  *,*before::before, *::after
+
+{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+body{
+	font-family: "Poppins", sans-serif;
+}
+img{
+	width:100%
+}
+a{
+	text-decoration: none;
+}
+.big-book
+{
+position: relative;
+padding: 40px;
+width: 100%;
+min-height: 100vh;
+overflow: hidden;
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.container{
+position: relative;
+max-width: 81rem;
+width: 100%;
+margin: 0;
+padding: 0 2rem;
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.logo img{
+	width: 50%;
+	margin-right: 0.6rem;
+	margin-top: -0.6rem;
+}
+.links ul{
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	font-size: medium;
+}
+.links li:hover{
+	background-color:var(--hoverColor);
+}
+.links a{
+color: var(--lightTwo);
+margin-left:4.5rem;
+display:inline-block;
+}
+.btn{
+	display:inline-box;
+	color:white;
+	background-color:var(--mainColor);
+	text-transform:capitalize;
+	transition:0.3s;
+	transform:scale(1.05);
+}
+.btn:hover{
+	background-color:var(--hoverColor);
+}
+.showcase-area .container{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	justify-content: center;
+}
+.big-title{
+	font-size: 1.4rem;
+	color: var(--darkOne);
+	text-transform: capitalize;
+	line-height: 1.4;
+}
+.big-title p{
+	font-size: 1.4rem;
+	color: var(--darkOne);
+	text-transform: capitalize;
+	line-height: 1.4;
+	padding: 0px 30px 20px;
+	font-size: 16px;
+
+}
+.text{
+	color: var(--lightOne);
+	font-size: 1.1rem;
+	margin: 1.9rem 0 2.5rem;
+	max-width: 600px;
+	line-height: 2.3;
+
+}
+.showcase-area .btn{
+	box-shadow: 0 0 40px 2px rgba(0,0,0, 0.05);
+}
+.person{
+	width: 123%;
+	transform: translate(15%,25px);
+}
+.mac-book{
+width: 100%;
+padding: 30px;
+}
+.right{
+	width: 100%;
+	padding: 30px;
+}
+@media screen and (max-width: 870px) {
+	.showcase-area .container {
+	  display: flex;
+	  flex-direction: column;
+	  padding-bottom: 30px;
+	}
+  
+	.big-book {
+	  padding: 20px;
+	  min-height: auto;
+	  align-items: center;
+	}
+  
+	.big-title {
+	  padding: 10px 0;
+	  font-size: 1.2rem;
+	}
+  
+	.big-title p {
+	  padding: 10px 0;
+	  font-size: 1rem;
+	  line-height: 1.8;
+	}
+  
+	.mac-book,
+	.person {
+	  width: 100%;
+	  max-width: 100%;
+	  padding: 15px 0;
+	  box-sizing: border-box;
+	}
+  
+	.right,
+	.left {
+	  width: 100%;
+	}
+	.showcase-area .container .right {
+		width: 100%;
+		order: -1; /* Move the right element to appear before the left element */
+	  }
+  s
+	.right {
+	  order: -1; /* Move the right element to appear before the left element */
+	}
+  }
+  
+  
+	
