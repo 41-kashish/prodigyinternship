@@ -1,0 +1,340 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: aliceblue;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 8%;
+    background: #fb83bf; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 100;
+    transition: background 0.3s;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #2a1969 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition:  0.3s; 
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+.navbar a.active {
+    color: #3498db;
+}
+
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(bacground.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    color: rgb(238, 152, 215);
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(169, 95, 151);
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: rgb(164, 59, 136);
+    
+}
+
+.home-scl a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-scl a:hover {
+    background-color: #0ef;
+    color: #f06bbf;
+    box-shadow: 0 0 20px;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #f06bbf;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px ;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 10px cyan;
+}
+
+/* ... (unchanged code) */
+
+.about {
+    background: #2c3e50;
+    color: #fff;
+    padding: 80px 10%;
+    position: relative;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #3498db;
+    margin-top: 0;
+}
+
+.about-content .col-1,
+.about-content .col-2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.outer-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px; /* Adjust the margin as needed */
+}
+.outer-circle:hover{
+    background:linear-gradient(-45deg, rgb(115, 200, 25), rgb(44, 44, 82), rgb(66, 133, 200), rgb(169, 208, 83));
+    color: #f06bbf;
+    box-shadow: 0 0 20px;
+}
+.animation-bg{
+    background:linear-gradient(-45deg, rgb(115, 200, 25), rgb(44, 44, 82), rgb(66, 133, 200), rgb(169, 208, 83));
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+    background-position: 100% 50%;
+    }
+    100%{
+    background-position: 0% 50%;
+    }
+}
+
+.inner-circle {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-image: url(butterfly.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+
+#skills{
+    background-color: black;
+    width: 100%;
+    padding: 120px 0px;
+    background:green;
+    background-size: cover;
+  }
+  #title1{
+    color: aliceblue;
+    font-size: 60px;
+    margin: 20px auto;
+    width: 1130px;
+    text-align: center;
+    
+  }
+  #title1:hover{
+    color: rgb(64, 64, 248);
+    transition: .3s;
+    cursor: all-scroll;
+   
+  }
+  #box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    
+  }
+  #cards{
+    height: 380px;
+    width: 350px;
+    padding: 25px 35px;
+    background: #806f80;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: .3s;
+    
+  }
+
+  #cards i{
+    font-size: 45px;
+    display: block;
+    text-align: center;
+    margin: 30px 0px;
+    color: coral;
+  
+  }
+  .cards:hover{
+    box-shadow: 0 0 10px cyan;
+}
+  h4{
+    color: rgb(248, 248, 7);
+    font-size: 30px;
+    text-align: center;
+  }
+  .pre p{
+    color: rgb(247, 241, 241);
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0px;
+    line-height: 20px;
+  }
+.portfolio {
+    background: #8e44ad;
+    color: #fff;
+    padding: 80px 10%;
+}
+
+.portfolio-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-content h2 {
+    font-size: 36px;
+    color: #f39c12;
+}
+
+/* Contact section styles */
+.contact {
+    background: #e74c3c;
+    color: #fff;
+    padding: 80px 10%;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    color: #3498db;
+}
+
+.contact-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.contact-links {
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Additional styles for active navigation link */
+.navbar a.active {
+    color: aqua;
+}
